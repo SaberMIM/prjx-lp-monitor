@@ -3,7 +3,7 @@ const path = require("path");
 const { ethers } = require("ethers");
 
 const RPC_URL = process.env.RPC_URL || "https://rpc.hyperliquid.xyz/evm";
-const EXPLORER_API_BASE = process.env.EXPLORER_API_BASE || "https://beta.hyperscan.com/api/v2";
+const EXPLORER_API_BASE = process.env.EXPLORER_API_BASE || "https://www.hyperscan.com/api/v2";
 const WALLET_ADDRESS = process.env.WALLET_ADDRESS;
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
