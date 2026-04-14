@@ -1,0 +1,11 @@
+{
+  "name": "prjx-lp-monitor",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "monitor": "node monitor.js"
+  },
+  "dependencies": {
+    "ethers": "^6.16.0"
+  }
+}
