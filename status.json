@@ -1,0 +1,10 @@
+{
+  "walletAddress": null,
+  "activePositionsCount": 0,
+  "outOfRangeCount": 0,
+  "nearestPositionTokenId": null,
+  "worstDistancePct": null,
+  "updatedAt": null,
+  "positions": [],
+  "errors": []
+}
