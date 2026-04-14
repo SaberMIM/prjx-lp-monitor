@@ -26,13 +26,13 @@ jobs:
 
       - name: Run monitor
         env:
-  RPC_URL: "https://rpc.hyperliquid.xyz/evm"
-  EXPLORER_API_BASE: "https://beta.hyperscan.com/api/v2"
-  POSITIONS_NFT_CONTRACT: "0xead19ae861c29bbb2101e834922b2feee69b9091"
-  WALLET_ADDRESS: ${{ secrets.WALLET_ADDRESS }}
-  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-  ALERT_THRESHOLD_PCT: "5"
+          RPC_URL: "https://rpc.hyperliquid.xyz/evm"
+          EXPLORER_API_BASE: "https://beta.hyperscan.com/api/v2"
+          POSITIONS_NFT_CONTRACT: "0xead19ae861c29bbb2101e834922b2feee69b9091"
+          WALLET_ADDRESS: ${{ secrets.WALLET_ADDRESS }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ALERT_THRESHOLD_PCT: "5"
         run: node monitor.js
 
       - name: Commit updated files
