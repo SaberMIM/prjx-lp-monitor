@@ -1,0 +1,44 @@
+name: PRJX LP Monitor
+
+on:
+  schedule:
+    - cron: "2-59/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run monitor
+        env:
+          RPC_URL: https://rpc.hyperliquid.xyz/evm
+          EXPLORER_API_BASE: https://beta.hyperscan.com/api/v2
+          POSITIONS_NFT_CONTRACT: 0xead19ae861c29bbb2101e834922b2feee69b9091
+          WALLET_ADDRESS: ${{ secrets.WALLET_ADDRESS }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ALERT_THRESHOLD_PCT: "5"
+        run: node monitor.js
+
+      - name: Commit updated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add status.json .state/alert-state.json
+          git diff --cached --quiet || git commit -m "Update LP status"
+          git push
