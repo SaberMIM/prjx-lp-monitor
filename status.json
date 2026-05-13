@@ -3,8 +3,8 @@
   "activePositionsCount": 1,
   "outOfRangeCount": 0,
   "nearestPositionTokenId": "438743",
-  "worstDistancePct": 4.21,
-  "updatedAt": "2026-05-13T12:22:05.227Z",
+  "worstDistancePct": 4.71,
+  "updatedAt": "2026-05-13T15:17:55.088Z",
   "positions": [
     {
       "tokenId": "438743",
@@ -16,15 +16,15 @@
       "inRange": true,
       "nearLower": true,
       "nearUpper": false,
-      "currentTick": -306530,
+      "currentTick": -306477,
       "tickLower": -306960,
       "tickUpper": -305580,
-      "currentPrice": 0.00048779,
+      "currentPrice": 0.00049039,
       "lowerPrice": 0.00046726,
       "upperPrice": 0.0005364,
-      "distToLowerPct": 4.21,
-      "distToUpperPct": 9.97,
-      "closestBoundaryPct": 4.21,
+      "distToLowerPct": 4.71,
+      "distToUpperPct": 9.38,
+      "closestBoundaryPct": 4.71,
       "poolAddress": "0x0D6ECB912b6ee160e95Bc198b618Acc1bCb92525"
     }
   ],
