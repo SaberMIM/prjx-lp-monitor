@@ -4,7 +4,7 @@
   "outOfRangeCount": 1,
   "nearestPositionTokenId": "440920",
   "worstDistancePct": -1,
-  "updatedAt": "2026-05-17T19:23:51.468Z",
+  "updatedAt": "2026-05-17T20:10:58.758Z",
   "positions": [
     {
       "tokenId": "440920",
@@ -16,14 +16,14 @@
       "inRange": false,
       "nearLower": false,
       "nearUpper": false,
-      "currentTick": -304686,
+      "currentTick": -304502,
       "tickLower": -306240,
       "tickUpper": -304860,
-      "currentPrice": 0.00058657,
+      "currentPrice": 0.00059746,
       "lowerPrice": 0.00050215,
       "upperPrice": 0.00057645,
-      "distToLowerPct": 14.39,
-      "distToUpperPct": -1.72,
+      "distToLowerPct": 15.95,
+      "distToUpperPct": -3.52,
       "closestBoundaryPct": -1,
       "poolAddress": "0x0D6ECB912b6ee160e95Bc198b618Acc1bCb92525"
     }
