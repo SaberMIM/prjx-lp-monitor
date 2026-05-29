@@ -1,10 +1,32 @@
 {
   "walletAddress": "0x4BBa504587d11f490C56ea02E53f77eE7AF50783",
-  "activePositionsCount": 0,
+  "activePositionsCount": 1,
   "outOfRangeCount": 0,
-  "nearestPositionTokenId": null,
-  "worstDistancePct": null,
-  "updatedAt": "2026-05-29T16:26:05.095Z",
-  "positions": [],
+  "nearestPositionTokenId": "469711",
+  "worstDistancePct": 7.47,
+  "updatedAt": "2026-05-29T19:05:43.648Z",
+  "positions": [
+    {
+      "tokenId": "469711",
+      "pair": "WHYPE/UBTC",
+      "token0Symbol": "WHYPE",
+      "token1Symbol": "UBTC",
+      "fee": 3000,
+      "liquidity": "65174339353360",
+      "inRange": true,
+      "nearLower": false,
+      "nearUpper": false,
+      "currentTick": -300544,
+      "tickLower": -301320,
+      "tickUpper": -299580,
+      "currentPrice": 0.00088755,
+      "lowerPrice": 0.00082128,
+      "upperPrice": 0.00097736,
+      "distToLowerPct": 7.47,
+      "distToUpperPct": 10.12,
+      "closestBoundaryPct": 7.47,
+      "poolAddress": "0x0D6ECB912b6ee160e95Bc198b618Acc1bCb92525"
+    }
+  ],
   "errors": []
 }
